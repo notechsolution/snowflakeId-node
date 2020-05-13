@@ -1,0 +1,38 @@
+{
+  "name": "snowflakeid",
+  "version": "1.0.0",
+  "description": "Provide snowflake ID generator and parser in a distributed environment in Node.js",
+  "main": "snowflakeId.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notechsolution/snowflakeId-node.git"
+  },
+  "keywords": [
+    "snowflakeid",
+    "flakeid",
+    "snowflake",
+    "parser",
+    "generator"
+  ],
+  "author": "notechsolution",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notechsolution/snowflakeId-node/issues"
+  },
+  "homepage": "https://github.com/notechsolution/snowflakeId-node#readme",
+  "dependencies": {
+    "big-integer": "^1.6.48",
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2"
+  },
+  "ava": {
+    "files": [
+      "./*.test.js"
+    ]
+  }
+}
