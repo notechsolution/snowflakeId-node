@@ -25,7 +25,7 @@ class SnowFlakeId {
 
         this.dataCenter = this.options.dataCenter || 0;
         this.worker = this.options.worker || 0;
-        this.epoch = this.options.epoch || new Date(2000, 0, 1).getTime();
+        this.epoch = this.options.epoch || new Date('2020-01-01T00:00:00.000+00:00').getTime();
         this.fixedSubId = this.dataCenter << this.offsets.dataCenter | this.worker << this.offsets.worker;
         this.seq = 0;
         this.seqMask = Math.pow(2, this.bits.sequence) - 1;
